@@ -1,12 +1,14 @@
 import { AllRoutes } from './routes/AllRoutes'
-import { useState } from 'react'
+import {Headers , Footers} from "./components"
 import './App.css'
 
 
 function App() {
   return (
     <div className="App">
+        <Headers />
         <AllRoutes/>
+        <Footers />
     </div>
     
   )

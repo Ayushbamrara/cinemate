@@ -1,5 +1,5 @@
-export { Header } from "./header";
-export { Footer } from "./footer";
 
+export { Headers } from "./Headers";
+export { Footers } from "./Footers";
 export { Card } from "./Card";
  
