@@ -7,7 +7,15 @@ export  const Headers  = () => {
   const [darkMode, setDarkMode] = useState(localStorage.getItem("darkMode") || false);
 
   useEffect(() => {
-    localStorage.setItem("darkMode",JSON.stringify(darkMode));
+  try {
+    localStorage.setItem("darkMode", JSON.stringify(darkMode));
+  } catch (e) {
+    if (e.name === "QuotaExceededError" || e.name === "NS_ERROR_DOM_QUOTA_REACHED") {
+      console.warn("localStorage is full — darkMode preference not saved.");
+    } else {
+      throw e;
+    }
+  }
     if(darkMode){
       document.documentElement.classList.add('dark');
     }else{
