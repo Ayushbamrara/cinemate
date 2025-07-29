@@ -6,7 +6,14 @@ export default {
   ],
   darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      screens:{
+        "other" : {'min': '340px' , 'max' : '1600px'},
+      },
+      colors: {
+        darkbg : "#1E293B",
+      }
+    },
   },
   plugins: [],
 }

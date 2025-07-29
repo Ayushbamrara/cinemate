@@ -11,7 +11,7 @@ node_modules
 dist
 dist-ssr
 *.local
-link.txt
+
 
 # Editor directories and files
 .vscode/*
@@ -23,3 +23,5 @@ link.txt
 *.njsproj
 *.sln
 *.sw?
+.env
+link.txt
