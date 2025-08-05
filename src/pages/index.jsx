@@ -3,4 +3,4 @@ export { MovieDetail } from "./MovieDetail";
 export { Search } from "./Search";
 
 export { PageNotFound } from "./PageNotFound";
-export {Button} from "../components";
+export { Button} from "../components";
