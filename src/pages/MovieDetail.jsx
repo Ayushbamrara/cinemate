@@ -18,7 +18,7 @@ export const MovieDetail = () => {
     fetchMovie();
   }, [])
 
-  const PageTitle =  useTitle(title);
+  const PageTitle =  useTitle(movie.title);
 
   return (
     <main>
